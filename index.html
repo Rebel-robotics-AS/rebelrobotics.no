@@ -3,92 +3,235 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rebel Robotics AS</title>
+    <title>Rebel Robotics AS – skreddersydd simulering og programvare</title>
     <meta
       name="description"
-      content="Rebel Robotics AS. Produkter og tjenester innen robotikk."
+      content="Rebel Robotics leverer skreddersydde simuleringer av robot- og automasjonsløsninger og skreddersydd programvare til produktkonfigurasjon, og står bak det nettbaserte CAD-programmet Rebel CAD."
     />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
     <meta property="og:title" content="Rebel Robotics AS" />
-    <meta property="og:description" content="Produkter og tjenester innen robotikk" />
+    <meta
+      property="og:description"
+      content="Skreddersydd simulering og programvare. Selskapet bak Rebel CAD."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/haavard-halvorsen.jpg" />
+    <meta property="og:image" content="https://rebelrobotics.no/assets/rebel-cad/girkasse-poster.jpg" />
     <link rel="icon" href="assets/rebel-robotics-mark.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
-    <div class="language-switch" aria-label="Velg språk">
-      <button type="button" class="lang-button is-active" data-lang="no">NO</button>
-      <span aria-hidden="true">/</span>
-      <button type="button" class="lang-button" data-lang="en">EN</button>
-    </div>
-
-    <main class="slide" aria-labelledby="brand-title">
-      <h1 class="wordmark" id="brand-title">
-        <span>Rebel</span>
-        <span>Robotics AS</span>
+  <body id="top">
+    <header class="top">
+      <h1 class="wordmark">
+        <a href="#top" aria-label="Rebel Robotics AS">
+          <b>Rebel</b>
+          <span>Robotics AS</span>
+        </a>
       </h1>
+      <nav class="top-nav" aria-label="Innhold" data-i18n-label="navLabel">
+        <a href="#tjenester" data-i18n="navServices">Tjenester</a>
+        <a href="#produkter" data-i18n="navProducts">Produkter</a>
+        <a href="#om" data-i18n="navAbout">Om selskapet</a>
+        <a href="#kontakt" data-i18n="navContact">Kontakt</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Velg språk" data-i18n-label="langLabel">
+        <button type="button" class="lang-button is-active" data-lang="no">NO</button>
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+      </div>
+    </header>
 
-      <section class="split" aria-label="Rebel products and services">
-        <article class="panel panel-products">
-          <h2>
-            <span>Rebel</span>
-            <span data-i18n="productsTitle">produkt</span>
-          </h2>
-          <p>
-            <span data-i18n="productsText">
-              Vi jobber med vårt første fysiske robotprodukt basert på roboter og
-              kunstig intelligens. Lansering i 2027.
-            </span>
-          </p>
+    <main>
+      <section class="hero" id="tjenester" aria-label="Tjenester" data-i18n-label="navServices">
+        <div class="service-grid">
+          <article class="service">
+            <h2 data-i18n="simTitle">Simulering</h2>
+            <p class="pitch" data-i18n="simPitch">
+              Skreddersydde simuleringer av robot- og automasjonsløsninger, til kommunikasjon,
+              beslutningsstøtte og implementering.
+            </p>
+            <p data-i18n="simEnd">
+              Er du sluttkunde, viser vi hvordan løsningen vil fungere i akkurat ditt produksjonsmiljø,
+              og hva du kan forvente av den når den står ferdig.
+            </p>
+            <p data-i18n="simIntegrator">
+              Er du robotintegrator, hjelper vi deg å vise løsningene dine fram for kundene dine.
+            </p>
+          </article>
+
+          <article class="service">
+            <h2 data-i18n="softTitle">Programvare</h2>
+            <p class="pitch" data-i18n="softPitch">
+              Skreddersydd programvare til produktkonfigurasjon, for kundene dine og til intern bruk.
+            </p>
+            <p data-i18n="softText">
+              Selger du et produkt som tilpasses hver kunde? Vi bygger en konfigurator inn i nettsiden
+              din, slik at kundene selv kan tilpasse produktet.
+            </p>
+            <p data-i18n="softInternal">
+              Den samme løsningen kan brukes internt, av salg og produksjon.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="products" id="produkter" aria-labelledby="products-title">
+        <h2 class="section-title wrap" id="products-title" data-i18n="productsTitle">Produkter</h2>
+
+        <article class="product product-cad" id="rebel-cad" aria-labelledby="cad-title">
+          <div class="wrap product-grid">
+            <div class="product-text">
+              <div class="lockup">
+                <img src="assets/rebel-cad/icon.svg" alt="" width="76" height="76" />
+                <h3 id="cad-title">Rebel CAD</h3>
+              </div>
+              <p class="status">
+                <span class="badge">Beta</span>
+                <span data-i18n="cadStatus">Åpen for alle</span>
+              </p>
+              <p class="pitch" data-i18n="cadPitch">
+                Nettbasert CAD, bygd for både KI-agenter og mennesker.
+              </p>
+              <p data-i18n="cadText">
+                Rebel Robotics har utviklet og drifter Rebel CAD. Programmet er laget for å være enkelt
+                å bruke for både KI-agenter og mennesker, og gjør 3D-konstruksjon og tekniske tegninger
+                tilgjengelig for alle. Det er gratis når det du lager er offentlig.
+              </p>
+              <p class="actions">
+                <a class="button" href="https://rebelcad.com/" target="_blank" rel="noopener" data-i18n="cadCta">Prøv Rebel CAD</a>
+                <a class="quiet-link" href="https://rebelcad.com/" target="_blank" rel="noopener">rebelcad.com</a>
+              </p>
+            </div>
+
+            <figure class="product-media cad-media">
+              <div class="collage">
+                <img
+                  class="collage-app"
+                  src="assets/rebel-cad/app-1400.webp"
+                  srcset="assets/rebel-cad/app-1400.webp 1400w, assets/rebel-cad/app-2400.webp 2400w"
+                  sizes="(max-width: 960px) 92vw, 680px"
+                  width="1400"
+                  height="875"
+                  alt="Rebel CAD i en nettleserfane: en girkasse med delelisten til venstre og et felt for å skrive til assistenten nederst"
+                  data-i18n-alt="cadAppAlt"
+                />
+                <video
+                  class="collage-film"
+                  data-loop
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="assets/rebel-cad/girkasse-poster.jpg"
+                  aria-label="Film av girkassen, rendret i Rebel CAD"
+                  data-i18n-label="cadFilmLabel"
+                >
+                  <source src="assets/rebel-cad/girkasse-loop.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <figcaption data-i18n="cadCaption">
+                En girkasse med 92 deler. Modellen, bevegelsesstudien og filmen er laget i Rebel CAD.
+              </figcaption>
+            </figure>
+          </div>
         </article>
 
-        <div class="divider" aria-hidden="true"></div>
+        <article class="product product-automate" id="rebel-automate" aria-labelledby="automate-title">
+          <div class="wrap product-grid">
+            <div class="product-text">
+              <div class="lockup">
+                <img src="assets/rebel-automate/mark.svg" alt="" width="76" height="76" />
+                <h3 id="automate-title">Rebel Automate</h3>
+              </div>
+              <p class="status">
+                <span data-i18n="automateStatus">Lansering til profesjonelle brukere kommer snart</span>
+              </p>
+            </div>
 
-        <article class="panel panel-services">
-          <h2>
-            <span data-i18n="servicesTitle">Konsulenttjenester</span>
-          </h2>
-          <p data-i18n="servicesText">
-            Selskapet har 15 års erfaring med utvikling av spesialtilpassede
-            robotikkløsninger. Ta gjerne kontakt for en uforpliktende prat om ditt
-            robotikkprosjekt.
-          </p>
-          <p>
-            <span data-i18n="contactLead">Kontakt meg på</span>
-            <br />
-            <a href="mailto:haavard@rebelrobotics.no">haavard@rebelrobotics.no</a>
-            <span>/ +47 988 59 477</span>
-          </p>
+            <div class="product-text">
+              <p class="pitch" data-i18n="automatePitch">
+                Programvare for simulering av større produksjonslinjer og logistikk.
+              </p>
+              <p data-i18n="automateText">
+                Maskiner, transportbånd, roboter og trucker settes sammen i 3D i riktig målestokk.
+                Simuleringen kjører mange skift på kort tid og viser kapasitet, flaskehalser og hva en
+                endring er verdt.
+              </p>
+              <p class="actions">
+                <a
+                  class="button"
+                  href="mailto:haavard@rebelrobotics.no?subject=Rebel%20Automate"
+                  data-i18n="automateCta"
+                >Ta kontakt for å prøve</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
 
-          <figure class="profile">
+      <section class="about" id="om" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <h2 class="section-title" id="about-title" data-i18n="aboutTitle">Om selskapet</h2>
+          <div class="about-text">
+            <p data-i18n="aboutText1">
+              Rebel Robotics holder til på Rockethouse i Sogndal, i en klynge av teknologiselskaper.
+              Rebel Robotics AS ble startet i 2025 som en rendyrket satsing på hvordan KI best kan
+              brukes i robotikk og automasjon.
+            </p>
+            <p data-i18n="aboutText2">
+              Selskapet drives av Håvard Halvorsen, som har lang erfaring med spesialtilpassede
+              robotikkløsninger, og blant annet har vært med å starte teknologiselskapene Rocketfarm og
+              nLink.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="kontakt" aria-labelledby="contact-title">
+        <div class="wrap contact-grid">
+          <div class="contact-text">
+            <h2 id="contact-title" data-i18n="contactTitle">Ta kontakt for mer informasjon.</h2>
+            <p data-i18n="contactText">
+              Fortell kort hva du vil simulere eller få laget, så viser vi deg hvordan vi jobber.
+            </p>
+          </div>
+
+          <div class="person">
             <img
               src="assets/haavard-halvorsen.jpg"
               alt="Håvard Halvorsen"
               width="1920"
               height="1920"
+              loading="lazy"
             />
-            <figcaption>
+            <p class="person-name">
               <span class="name">Håvard Halvorsen</span>
               <span class="role" data-i18n="role">Senior robotikkingeniør</span>
-            </figcaption>
-          </figure>
-        </article>
+            </p>
+            <p class="person-lines">
+              <a href="mailto:haavard@rebelrobotics.no">haavard@rebelrobotics.no</a>
+              <a href="tel:+4798859477">+47 988 59 477</a>
+            </p>
+          </div>
+        </div>
       </section>
-
-      <address class="address">
-        <span>Rebel Robotics AS</span>
-        <a href="https://rockethouse.no/" target="_blank" rel="noreferrer">Rockethouse</a>
-        <span>Årøyvegen 7, 6856 Sogndal</span>
-        <span data-i18n="country">Norge</span>
-      </address>
     </main>
+
+    <footer class="foot">
+      <div class="wrap foot-grid">
+        <p class="foot-name">Rebel Robotics AS</p>
+        <address>
+          <a href="https://rockethouse.no/" target="_blank" rel="noopener">Rockethouse</a>
+          <span>Årøyvegen 7, 6856 Sogndal</span>
+          <span data-i18n="country">Norge</span>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>
