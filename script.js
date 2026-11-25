@@ -46,8 +46,6 @@ const translations = {
       "Maskiner, transportbånd, roboter og trucker settes sammen i 3D i riktig målestokk. Simuleringen kjører mange skift på kort tid og viser kapasitet, flaskehalser og hva en endring er verdt.",
     automateCta: "Ta kontakt for å prøve",
     contactTitle: "Ta kontakt for mer informasjon.",
-    contactText:
-      "Fortell kort hva du vil simulere eller få laget, så viser vi deg hvordan vi jobber.",
     aboutTitle:
       "Om selskapet",
     aboutText1:
@@ -104,8 +102,6 @@ const translations = {
       "Machines, conveyors, robots and trucks are put together in 3D, to scale. The simulation runs many shifts in a short time and shows capacity, bottlenecks and what a change is worth.",
     automateCta: "Get in touch to try it",
     contactTitle: "Get in touch for more information.",
-    contactText:
-      "Tell us briefly what you want simulated or made, and we will show you how we work.",
     aboutTitle:
       "About the company",
     aboutText1:

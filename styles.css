@@ -433,20 +433,11 @@ p {
   text-wrap: balance;
 }
 
-.contact-text p {
-  max-width: 30em;
-  margin-top: clamp(20px, 2.4vw, 30px);
-  font-size: clamp(19px, 1.6vw, 23px);
-  line-height: 1.42;
-}
-
 .person {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 6px 18px;
   align-items: center;
-  padding-top: 22px;
-  border-top: 1px solid var(--ink);
 }
 
 .person img {
