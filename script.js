@@ -227,3 +227,15 @@ function retry() {
   });
 }
 ["pointerup", "touchend", "keydown"].forEach((type) => document.addEventListener(type, retry, { once: true, passive: true }));
+
+// Visitor statistics: Cloudflare Web Analytics, which sets no cookies and stores nothing in the browser.
+// It loads only on the live site (not in a preview). The token names the site «rebelrobotics.no» in
+// Cloudflare's Web Analytics and is not a secret.
+const statisticsToken = "d63ab38eae124693adb1be55e3865b5d";
+if (statisticsToken && /(^|\.)rebelrobotics\.no$/.test(location.hostname)) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: statisticsToken });
+  document.head.append(beacon);
+}
